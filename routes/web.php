@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GoogleController;
+use App\Http\Controllers\student\dashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +17,10 @@ use App\Http\Controllers\Auth\GoogleController;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('auth/google', [GoogleController::class, 'authGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'googleCallback']);
 
+Route::get('/dashboard', [dashboardController::class, 'index'])->name('dashboard');
 
 

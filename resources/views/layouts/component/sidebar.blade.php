@@ -19,9 +19,6 @@
                     <li>
                         <a href="index-2.html">List Mapel</a>
                     </li>
-                    <li>
-                        <a href="pages/dashboard/dashboard-2.html">Tambah Mapel</a>
-                    </li>
                 </ul>
             </li>
             <li>
@@ -60,9 +57,6 @@
                 <ul>
                     <li>
                         <a href="#">List pengajar</a>
-                    </li>
-                    <li>
-                        <a href="#">Tambah Pengajar</a>
                     </li>
                 </ul>
             </li>

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\teacher;
+namespace App\Http\Controllers\student;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class sceduleController extends Controller
+class dashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class sceduleController extends Controller
      */
     public function index()
     {
-        //
+        return view ('layouts.master');
     }
 
     /**

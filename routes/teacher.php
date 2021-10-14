@@ -5,7 +5,7 @@ use App\Http\Controllers\teacher\teacherController;
 use App\Http\Controllers\teacher\annoucementController;
 use App\Http\Controllers\teacher\materialController;
 use App\Http\Controllers\teacher\profileController;
-use App\Http\Controllers\teacher\sceduleController;
+use App\Http\Controllers\teacher\ScheduleController;
 use App\Http\Controllers\teacher\taskController;
 
 /*
@@ -19,10 +19,14 @@ use App\Http\Controllers\teacher\taskController;
 |
 */
 
+Route::group(['middleware' => ['role:teacher']], function () {
+    Route::get('/teacher',[teacherController::class,'index']);
+    Route::get('/schedule-subject',[ScheduleController::class,'index'])->name('schedule');
+    Route::get('/announcement',[annoucementController::class,'index'])->name('announcement');
+    Route::get('/material',[materialController::class,'index'])->name('material');
+    Route::get('/profile',[profileController::class,'index'])->name('profile');
+    Route::get('/task',[taskController::class,'index'])->name('task');
+});
 
-
-    Route::get('/', function () {
-        return view('layouts.component.assets-teacher.master');
-    });
 
 
