@@ -59,4 +59,4 @@
 
 <!-- Demo Purpose Only -->
 <script src="{{URL::to('assets/js/demo.js')}}"></script>
-@stack('js-teacher')
+@stack('js')

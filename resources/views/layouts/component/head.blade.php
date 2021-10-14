@@ -42,5 +42,5 @@
 
     <!-- Demo Purpose Only -->
     <link href="{{asset('assets/css/demo/setting-box.css')}}" rel="stylesheet" />
-    @stack('head-teacher')
+    @stack('head')
 </head>

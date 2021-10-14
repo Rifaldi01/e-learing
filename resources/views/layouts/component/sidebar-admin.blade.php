@@ -19,33 +19,8 @@
                     <li>
                         <a href="index-2.html">List Mapel</a>
                     </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">book</i>
-                    <span class="nav-label">Tugas</span>
-                </a>
-                <ul>
                     <li>
-                        <a href="index-2.html">List Tugas</a>
-                    </li>
-                    <li>
-                        <a href="pages/dashboard/dashboard-2.html">Tambah Tugas</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">assignment</i>
-                    <span class="nav-label">Materi</span>
-                </a>
-                <ul>
-                    <li>
-                        <a href="#">List Materi</a>
-                    </li>
-                    <li>
-                        <a href="#">Tambah Materi</a>
+                        <a href="index-2.html">Tambah Mapel</a>
                     </li>
                 </ul>
             </li>
@@ -58,6 +33,9 @@
                     <li>
                         <a href="#">List pengajar</a>
                     </li>
+                    <li>
+                        <a href="#">Tambah Pengajar</a>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -67,7 +45,10 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="#">List siswa</a>
+                        <a href="#">List Siswa</a>
+                    </li>
+                    <li>
+                        <a href="#">Tambah Siswa</a>
                     </li>
                 </ul>
             </li>

@@ -11,14 +11,16 @@
 @include('layouts.component.header')
 <!-- #END# Top Bar -->
     <!-- Left Menu -->
-    @if(Auth::check('teacher'))
-        @include('layouts.component.sidebar')
-    @elseif(Auth::check('teacher'))
-        @include('layouts.component.sidebar-admin')
-    @elseif(Auth::check('student'))
-        @include('layouts.component.sidebar-student')
-    @endif
 
+    @role('teacher')
+    @include('layouts.component.sidebar')
+    @else
+        @include('layouts.component.sidebar-student')
+        @endrole
+
+        @role('admin')
+        @include('layouts.component.sidebar-admin')
+        @endrole
 <!-- #END# Left Menu -->
     <!-- Right Sidebar -->
 @include('layouts.component.right-sidebar')
